@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { HStack, ScrollView, IconButton, VStack } from 'native-base';
 import { EvilIcons } from '@expo/vector-icons';
-import { CinzelText } from './StyledText';
+import { MontserratText } from './StyledText';
 import { Avatar } from 'native-base';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux';
@@ -15,7 +15,7 @@ export function InstaStory() {
     <ScrollView
       horizontal={true}
       decelerationRate={'normal'}
-      style={{ maxHeight: 50 }}
+      style={{ maxHeight: 120, height: 120 }}
       showsHorizontalScrollIndicator={false}
     >
       <HStack space={4} px={5}>
@@ -28,14 +28,13 @@ export function InstaStory() {
               name: 'camera',
             }}
           />
-          <CinzelText style={{ fontSize: 10 }}>+Add</CinzelText>
+          <MontserratText style={{ fontSize: 10 }}>+Add</MontserratText>
         </VStack>
 
         {following.map((user: string, idx: number) => {
           return (
-            <VStack alignItems='center'>
+            <VStack alignItems='center' key={idx}>
               <Avatar
-                key={idx}
                 bg='green.500'
                 mr='1'
                 source={{
@@ -45,7 +44,7 @@ export function InstaStory() {
                 RS
                 <Avatar.Badge bg='#0078d4' />
               </Avatar>
-              <CinzelText style={{ fontSize: 10 }}>{user}</CinzelText>
+              <MontserratText style={{ fontSize: 10 }}>{user}</MontserratText>
             </VStack>
           );
         })}

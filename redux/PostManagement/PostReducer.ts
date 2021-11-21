@@ -18,7 +18,7 @@ const initialState = {
   posts: [
     {
       id: '1',
-      title: 'Title 1',
+      title: 'How are you all?',
       createdBy: 'payal1',
       createdAt: '1 Oct 2021',
       likes: ['quepayal', 'pi', 'palak', 'mom', 'nishant', 'father'],
@@ -29,7 +29,7 @@ const initialState = {
     },
     {
       id: '1',
-      title: 'Title 2',
+      title: 'Just chilling!',
       createdBy: 'payal1',
       createdAt: '1 Oct 2021',
       likes: ['quepayal', 'pi', 'palak', 'mom', 'nishant', 'father'],
@@ -40,7 +40,7 @@ const initialState = {
     },
     {
       id: '1',
-      title: 'Title 3',
+      title: 'Watching his dark materials...',
       createdBy: 'payal1',
       createdAt: '1 Oct 2021',
       likes: ['quepayal', 'pi', 'palak', 'mom', 'nishant', 'father'],

@@ -1,24 +1,28 @@
 import * as React from 'react';
-import { Heading, HStack, Box, Text } from 'native-base';
-import { Link } from '@react-navigation/native';
-import { Feather, FontAwesome } from '@expo/vector-icons';
+import { HStack, Box } from 'native-base';
+import { FontAwesome } from '@expo/vector-icons';
 import Colors from '../constants/Colors';
-import { CinzelText } from './StyledText';
+import { MontserratText } from './StyledText';
+import * as WebBrowser from 'expo-web-browser';
+import { TouchableOpacity } from 'react-native';
+
+function handleHelpPress() {
+  WebBrowser.openBrowserAsync('https://github.com/quepayal/Instaverse');
+}
 
 export function Header() {
   const colorScheme = 'light';
   return (
     <Box safeAreaTop>
       <HStack px='5' py='3' justifyContent='space-between' alignItems='center'>
-        <CinzelText style={{ fontSize: 25 }}>Instaverse</CinzelText>
-        <Link to={{ screen: 'Root', params: { screen: 'Activity' } }}>
+        <MontserratText style={{ fontSize: 25 }}>Instaverse</MontserratText>
+        <TouchableOpacity onPress={handleHelpPress}>
           <FontAwesome
-            name='bell-o'
+            name='github'
             size={24}
             color={Colors[colorScheme].text}
-            style={{ marginRight: 10 }}
           />
-        </Link>
+        </TouchableOpacity>
       </HStack>
     </Box>
   );
