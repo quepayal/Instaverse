@@ -16,6 +16,7 @@ import {
   DarkTheme,
 } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Avatar } from 'native-base';
 import { color } from 'native-base/lib/typescript/theme/styled-system';
 import * as React from 'react';
 import { ColorSchemeName, Pressable } from 'react-native';
@@ -100,29 +101,6 @@ function BottomTabNavigator() {
           tabBarIcon: ({ color }) => (
             <FontAwesome name='home' size={24} color={color} />
           ),
-          headerRight: () => (
-            <Pressable
-              onPress={() => navigation.navigate('Modal')}
-              style={({ pressed }) => ({
-                opacity: pressed ? 0.5 : 1,
-              })}
-            >
-              <FontAwesome
-                name='bell-o'
-                size={24}
-                color={Colors[colorScheme].text}
-                style={{ marginTop: 15 }}
-              />
-            </Pressable>
-          ),
-          headerLeft: () => (
-            <Feather
-              name='align-left'
-              size={24}
-              color={Colors[colorScheme].text}
-              style={{ marginTop: 15 }}
-            />
-          ),
         })}
       />
       <Tab.Screen
@@ -165,7 +143,14 @@ function BottomTabNavigator() {
           title: 'Profile',
           tabBarColor: '#42275a',
           tabBarIcon: ({ color }) => (
-            <MaterialIcons name='account-circle' size={24} color={color} />
+            <Avatar
+              bg='#42275a'
+              mr='1'
+              size='6'
+              source={{
+                uri: 'https://miro.medium.com/fit/c/64/64/1*VtytdUkVgindIMV4vFrK5g.jpeg',
+              }}
+            ></Avatar>
           ),
         }}
       />

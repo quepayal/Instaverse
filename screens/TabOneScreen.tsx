@@ -1,12 +1,20 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
 import { Header } from '../components/Header';
+import { InstaStory } from '../components/InstaStory';
+import { Posts } from '../components/Posts';
 import { RootTabScreenProps } from '../types';
 
 export default function TabOneScreen({
   navigation,
 }: RootTabScreenProps<'Home'>) {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <InstaStory />
+      <Posts />
+    </>
+  );
 }
 
 const styles = StyleSheet.create({
