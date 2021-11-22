@@ -8,13 +8,7 @@ import { RootTabScreenProps } from '../types';
 export default function TabOneScreen({
   navigation,
 }: RootTabScreenProps<'Home'>) {
-  return (
-    <>
-      <Header />
-      <InstaStory />
-      <Posts />
-    </>
-  );
+  return <Posts />;
 }
 
 const styles = StyleSheet.create({

@@ -1,12 +1,14 @@
 import * as React from 'react';
-import { HStack, ScrollView, IconButton, VStack } from 'native-base';
+import { HStack, ScrollView, IconButton, VStack, Icon } from 'native-base';
 import { EvilIcons } from '@expo/vector-icons';
-import { MontserratText } from './StyledText';
 import { Avatar } from 'native-base';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux';
+import { color } from 'native-base/lib/typescript/theme/styled-system';
+import { G, Path } from 'react-native-svg';
+import { MontserratText } from './StyledText';
 
-export function InstaStory() {
+export function Highlights() {
   const following = useSelector(
     (state: RootState) => state.userReducer.following
   );
@@ -18,19 +20,7 @@ export function InstaStory() {
       style={{ maxHeight: 120, height: 90 }}
       showsHorizontalScrollIndicator={false}
     >
-      <HStack space={4} px={5}>
-        <VStack alignItems='center'>
-          <IconButton
-            style={{ borderRadius: 50, height: 50, backgroundColor: '#f15f79' }}
-            variant='solid'
-            _icon={{
-              as: EvilIcons,
-              name: 'camera',
-            }}
-          />
-          {/* <MontserratText style={{ fontSize: 10 }}>+Add</MontserratText> */}
-        </VStack>
-
+      <HStack space={4} px={5} py={5}>
         {following.map((user: string, idx: number) => {
           return (
             <VStack alignItems='center' key={idx}>
@@ -44,7 +34,7 @@ export function InstaStory() {
                 RS
                 <Avatar.Badge bg='#0078d4' />
               </Avatar>
-              {/* <MontserratText style={{ fontSize: 10 }}>{user}</MontserratText> */}
+              <MontserratText style={{ fontSize: 10 }}>{user}</MontserratText>
             </VStack>
           );
         })}

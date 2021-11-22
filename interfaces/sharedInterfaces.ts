@@ -104,3 +104,8 @@ export interface ICommentMetadata {
   createdBy: string;
   createdAt: string;
 }
+
+export interface IStat {
+  data: string;
+  featureName: string;
+}
