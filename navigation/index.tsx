@@ -27,6 +27,7 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
+import { SearchScreen } from '../screens/SearchScreen';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
 import {
@@ -110,7 +111,7 @@ function BottomTabNavigator() {
       />
       <Tab.Screen
         name='Search'
-        component={TabTwoScreen}
+        component={SearchScreen}
         options={{
           title: 'Search',
           tabBarColor: '#CB356B',
