@@ -57,7 +57,7 @@ export function SearchScreen() {
     },
   ];
   return (
-    <Box safeAreaTop px={3} py={5}>
+    <Box safeAreaTop px={3} py={5} background='#FFFFFF' height='100%'>
       <VStack width='100%' space={5} alignItems='flex-start'>
         <Input
           placeholder='Search'

@@ -25,6 +25,8 @@ import { Header } from '../components/Header';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
+import { ActivityScreen } from '../screens/ActivityScreen';
+import { AddPost } from '../screens/AddPost';
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { SearchScreen } from '../screens/SearchScreen';
@@ -126,7 +128,7 @@ function BottomTabNavigator() {
       />
       <Tab.Screen
         name='AddPost'
-        component={TabTwoScreen}
+        component={AddPost}
         options={{
           title: 'Add Post',
           tabBarColor: '#1CB5E0',
@@ -141,7 +143,7 @@ function BottomTabNavigator() {
       />
       <Tab.Screen
         name='Activity'
-        component={TabTwoScreen}
+        component={ActivityScreen}
         options={{
           title: 'Activity',
           tabBarColor: '#fd746c',

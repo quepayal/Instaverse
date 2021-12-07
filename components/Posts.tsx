@@ -20,7 +20,7 @@ import {
   Octicons,
 } from '@expo/vector-icons';
 import Colors from '../constants/Colors';
-import { MontserratText } from './StyledText';
+import { MontserratBoldText, MontserratText } from './StyledText';
 import { Avatar } from 'native-base';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux';
@@ -89,6 +89,11 @@ export function Posts() {
                 </Box>
 
                 <HStack justifyContent={'space-between'}>
+                  <MontserratBoldText
+                    style={{ fontSize: 20, color: '#646464' }}
+                  >
+                    Multiverse
+                  </MontserratBoldText>
                   <HStack space={3} justifyContent={'space-between'}>
                     <HStack space={1} alignItems={'center'}>
                       <Icon>
@@ -105,29 +110,16 @@ export function Posts() {
                       </MontserratText>
                     </HStack>
                     <HStack space={1} alignItems={'center'}>
-                      <Icon>
+                      <Icon marginRight='-2'>
                         <G>
                           <Path
-                            d='M20,2L4,2c-1.1,0 -2,0.9 -2,2v18l4,-4h14c1.1,0 2,-0.9 2,-2L22,4c0,-1.1 -0.9,-2 -2,-2zM20,16L6,16l-2,2L4,4h16v12z'
+                            d='M17,3L7,3c-1.1,0 -2,0.9 -2,2v16l7,-3 7,3L19,5c0,-1.1 -0.9,-2 -2,-2zM17,18l-5,-2.18L7,18L7,5h10v13z'
                             fill='#646464'
                           ></Path>
                         </G>
                       </Icon>
-
-                      <MontserratText style={{ fontSize: 12 }}>
-                        {/* {post.likes.length} */}
-                      </MontserratText>
                     </HStack>
                   </HStack>
-
-                  <Icon marginRight='-2'>
-                    <G>
-                      <Path
-                        d='M17,3L7,3c-1.1,0 -2,0.9 -2,2v16l7,-3 7,3L19,5c0,-1.1 -0.9,-2 -2,-2zM17,18l-5,-2.18L7,18L7,5h10v13z'
-                        fill='#646464'
-                      ></Path>
-                    </G>
-                  </Icon>
                 </HStack>
               </VStack>
             );
