@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { HStack, ScrollView, IconButton, VStack } from 'native-base';
 import { EvilIcons } from '@expo/vector-icons';
-import { MontserratText } from './StyledText';
 import { Avatar } from 'native-base';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux';
@@ -28,7 +27,6 @@ export function InstaStory() {
               name: 'camera',
             }}
           />
-          {/* <MontserratText style={{ fontSize: 10 }}>+Add</MontserratText> */}
         </VStack>
 
         {following.map((user: string, idx: number) => {

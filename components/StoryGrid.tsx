@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, AspectRatio, Image, ScrollView, Flex } from 'native-base';
+import { AspectRatio, Image, Flex } from 'native-base';
 
 export function StoryGrid() {
   const colorScheme = 'light';

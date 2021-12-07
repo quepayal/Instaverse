@@ -9,10 +9,8 @@ import {
   HStack,
   Spacer,
   Text,
-  Button,
 } from 'native-base';
 import { G, Path } from 'react-native-svg';
-import { StoryGrid } from '../components/StoryGrid';
 
 export function SearchScreen() {
   const data = [

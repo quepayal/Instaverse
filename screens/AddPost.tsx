@@ -1,25 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import {
-  Image,
-  ImageBackground,
-  Platform,
-  TouchableOpacity,
-} from 'react-native';
+import { ImageBackground, Platform, TouchableOpacity } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
-import {
-  Box,
-  Button,
-  Fab,
-  HStack,
-  Icon,
-  IconButton,
-  Input,
-  VStack,
-} from 'native-base';
+import { Box, HStack, Icon, IconButton, Input, VStack } from 'native-base';
 import { G, Path } from 'react-native-svg';
 import * as WebBrowser from 'expo-web-browser';
 import { MontserratBoldText } from '../components/StyledText';
-import { AntDesign, EvilIcons } from '@expo/vector-icons';
+import { EvilIcons } from '@expo/vector-icons';
 
 export function AddPost() {
   const [image, setImage] = useState<string | undefined>();

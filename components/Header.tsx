@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { HStack, Box, Icon } from 'native-base';
-import { FontAwesome } from '@expo/vector-icons';
-import Colors from '../constants/Colors';
-import { MontserratBoldText, MontserratText } from './StyledText';
+import { MontserratBoldText } from './StyledText';
 import * as WebBrowser from 'expo-web-browser';
 import { TouchableOpacity } from 'react-native';
 import { G, Path } from 'react-native-svg';

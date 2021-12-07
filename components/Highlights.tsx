@@ -1,11 +1,8 @@
 import * as React from 'react';
-import { HStack, ScrollView, IconButton, VStack, Icon } from 'native-base';
-import { EvilIcons } from '@expo/vector-icons';
+import { HStack, ScrollView, VStack } from 'native-base';
 import { Avatar } from 'native-base';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux';
-import { color } from 'native-base/lib/typescript/theme/styled-system';
-import { G, Path } from 'react-native-svg';
 import { MontserratText } from './StyledText';
 
 export function Highlights() {

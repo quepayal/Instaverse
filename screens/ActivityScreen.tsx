@@ -1,18 +1,13 @@
 import React from 'react';
 import {
   VStack,
-  Input,
-  Icon,
   Box,
   Avatar,
   FlatList,
   HStack,
   Spacer,
   Text,
-  Button,
 } from 'native-base';
-import { G, Path } from 'react-native-svg';
-import { StoryGrid } from '../components/StoryGrid';
 import { MontserratBoldText } from '../components/StyledText';
 
 enum ActivityType {

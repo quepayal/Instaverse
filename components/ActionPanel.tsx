@@ -1,7 +1,5 @@
 import * as React from 'react';
-import { HStack, Avatar, Stack, Icon } from 'native-base';
-import { MontserratBoldText } from './StyledText';
-import { InstaStat } from './InstaStat';
+import { HStack, Stack, Icon } from 'native-base';
 import { G, Path } from 'react-native-svg';
 import { StoryGrid } from './StoryGrid';
 

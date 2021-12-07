@@ -1,11 +1,6 @@
 import * as React from 'react';
-import { HStack, Box, Icon, Avatar, VStack } from 'native-base';
-import { FontAwesome } from '@expo/vector-icons';
-import Colors from '../constants/Colors';
-import { MontserratBoldText, MontserratText } from './StyledText';
-import * as WebBrowser from 'expo-web-browser';
-import { TouchableOpacity } from 'react-native';
-import { G, Path } from 'react-native-svg';
+import { VStack } from 'native-base';
+import { MontserratBoldText } from './StyledText';
 import { IStat } from '../interfaces/sharedInterfaces';
 
 export function InstaStat(props: IStat) {

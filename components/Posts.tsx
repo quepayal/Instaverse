@@ -2,24 +2,13 @@ import * as React from 'react';
 import {
   HStack,
   ScrollView,
-  IconButton,
   VStack,
-  Text,
   Image,
   Center,
   AspectRatio,
   Box,
   Icon,
 } from 'native-base';
-import {
-  EvilIcons,
-  Feather,
-  FontAwesome,
-  Fontisto,
-  MaterialIcons,
-  Octicons,
-} from '@expo/vector-icons';
-import Colors from '../constants/Colors';
 import { MontserratBoldText, MontserratText } from './StyledText';
 import { Avatar } from 'native-base';
 import { useSelector } from 'react-redux';
